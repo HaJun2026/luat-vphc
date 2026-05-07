@@ -251,20 +251,231 @@ VIOLATIONS = [
         "additional_penalty": "Đình chỉ hoạt động từ 3 đến 5 tháng nếu vi phạm nghiêm trọng",
         "remedial_measure": "Buộc trang bị đầy đủ phương tiện phòng cháy chữa cháy",
     },
+    # --- Dữ liệu bổ sung ---
+    # Giao thông đường bộ (bổ sung)
+    {
+        "title": "Đi ngược chiều đường một chiều (xe ô tô)",
+        "description": "Người điều khiển xe ô tô đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển cấm đi ngược chiều",
+        "category": "giao_thong",
+        "min_fine": 4000000,
+        "max_fine": 6000000,
+        "legal_basis": "Nghị định 100/2019/NĐ-CP, Điều 5",
+        "additional_penalty": "Tước giấy phép lái xe từ 1 đến 3 tháng",
+        "remedial_measure": None,
+    },
+    {
+        "title": "Đi ngược chiều đường một chiều (xe mô tô)",
+        "description": "Người điều khiển xe mô tô, xe gắn máy đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển cấm đi ngược chiều",
+        "category": "giao_thong",
+        "min_fine": 1000000,
+        "max_fine": 2000000,
+        "legal_basis": "Nghị định 100/2019/NĐ-CP, Điều 6",
+        "additional_penalty": None,
+        "remedial_measure": None,
+    },
+    {
+        "title": "Xe ô tô chở quá số người quy định",
+        "description": "Điều khiển xe ô tô chở người quá số người quy định từ 02 người trở lên (trừ xe buýt, xe khách)",
+        "category": "giao_thong",
+        "min_fine": 4000000,
+        "max_fine": 6000000,
+        "legal_basis": "Nghị định 100/2019/NĐ-CP, Điều 5",
+        "additional_penalty": "Tước giấy phép lái xe từ 1 đến 3 tháng",
+        "remedial_measure": None,
+    },
+    {
+        "title": "Xe ô tô chở hàng hóa quá tải trọng cho phép trên 50%",
+        "description": "Điều khiển xe ô tô chở hàng hóa vượt quá trọng tải cho phép trên 50%",
+        "category": "giao_thong",
+        "min_fine": 7000000,
+        "max_fine": 8000000,
+        "legal_basis": "Nghị định 100/2019/NĐ-CP, Điều 24",
+        "additional_penalty": "Tước giấy phép lái xe từ 1 đến 3 tháng",
+        "remedial_measure": "Buộc hạ tải hàng hóa xuống đúng quy định",
+    },
+    {
+        "title": "Điều khiển xe khi không có giấy phép lái xe",
+        "description": "Người điều khiển xe ô tô không có giấy phép lái xe hoặc sử dụng giấy phép lái xe không do cơ quan có thẩm quyền cấp",
+        "category": "giao_thong",
+        "min_fine": 10000000,
+        "max_fine": 12000000,
+        "legal_basis": "Nghị định 100/2019/NĐ-CP, Điều 21",
+        "additional_penalty": None,
+        "remedial_measure": None,
+    },
+    {
+        "title": "Vượt đèn đỏ, đèn vàng (xe mô tô, xe máy)",
+        "description": "Người điều khiển xe mô tô, xe gắn máy không chấp hành hiệu lệnh của đèn tín hiệu giao thông",
+        "category": "giao_thong",
+        "min_fine": 800000,
+        "max_fine": 1000000,
+        "legal_basis": "Nghị định 100/2019/NĐ-CP, Điều 6",
+        "additional_penalty": "Tước giấy phép lái xe từ 1 đến 3 tháng",
+        "remedial_measure": None,
+    },
+    {
+        "title": "Dừng, đỗ xe trên phần đường xe chạy gây cản trở giao thông",
+        "description": "Dừng xe, đỗ xe trên phần đường xe chạy ở đoạn đường ngoài đô thị nơi có lề đường gây cản trở giao thông",
+        "category": "giao_thong",
+        "min_fine": 800000,
+        "max_fine": 1000000,
+        "legal_basis": "Nghị định 100/2019/NĐ-CP, Điều 5",
+        "additional_penalty": None,
+        "remedial_measure": None,
+    },
+    {
+        "title": "Không chấp hành hiệu lệnh của cảnh sát giao thông",
+        "description": "Người điều khiển xe ô tô không chấp hành hiệu lệnh, yêu cầu kiểm tra, kiểm soát của người thi hành công vụ",
+        "category": "giao_thong",
+        "min_fine": 6000000,
+        "max_fine": 8000000,
+        "legal_basis": "Nghị định 100/2019/NĐ-CP, Điều 5",
+        "additional_penalty": "Tước giấy phép lái xe từ 1 đến 3 tháng",
+        "remedial_measure": None,
+    },
+    # Môi trường (bổ sung)
+    {
+        "title": "Gây tiếng ồn vượt quy chuẩn kỹ thuật trong khu dân cư",
+        "description": "Gây tiếng ồn vượt quy chuẩn kỹ thuật về tiếng ồn trong khu dân cư, khu vực có yêu cầu sự yên tĩnh",
+        "category": "moi_truong",
+        "min_fine": 1000000,
+        "max_fine": 5000000,
+        "legal_basis": "Nghị định 45/2022/NĐ-CP, Điều 22",
+        "additional_penalty": None,
+        "remedial_measure": "Buộc thực hiện biện pháp giảm thiểu tiếng ồn",
+    },
+    {
+        "title": "Không lập báo cáo đánh giá tác động môi trường",
+        "description": "Thực hiện dự án đầu tư thuộc đối tượng phải lập báo cáo đánh giá tác động môi trường mà không lập hoặc không được phê duyệt",
+        "category": "moi_truong",
+        "min_fine": 100000000,
+        "max_fine": 200000000,
+        "legal_basis": "Nghị định 45/2022/NĐ-CP, Điều 9",
+        "additional_penalty": "Đình chỉ hoạt động từ 6 đến 12 tháng",
+        "remedial_measure": "Buộc lập và trình phê duyệt báo cáo đánh giá tác động môi trường",
+    },
+    # Lao động (bổ sung)
+    {
+        "title": "Phân biệt đối xử về giới tính trong tuyển dụng lao động",
+        "description": "Phân biệt đối xử về giới tính, dân tộc, màu da, thành phần xã hội trong tuyển dụng, sử dụng, đào tạo lao động",
+        "category": "lao_dong",
+        "min_fine": 5000000,
+        "max_fine": 10000000,
+        "legal_basis": "Nghị định 12/2022/NĐ-CP, Điều 8",
+        "additional_penalty": None,
+        "remedial_measure": "Buộc nhận người lao động trở lại làm việc",
+    },
+    {
+        "title": "Không trả lương đúng hạn cho người lao động",
+        "description": "Trả lương không đúng hạn theo quy định của pháp luật mà không có lý do chính đáng",
+        "category": "lao_dong",
+        "min_fine": 5000000,
+        "max_fine": 10000000,
+        "legal_basis": "Nghị định 12/2022/NĐ-CP, Điều 17",
+        "additional_penalty": None,
+        "remedial_measure": "Buộc trả đủ tiền lương cộng với khoản tiền lãi chậm trả",
+    },
+    {
+        "title": "Không có biện pháp bảo đảm an toàn lao động tại nơi làm việc",
+        "description": "Không có biện pháp bảo đảm an toàn lao động đối với những nơi có nguy cơ tai nạn lao động cao",
+        "category": "lao_dong",
+        "min_fine": 8000000,
+        "max_fine": 12000000,
+        "legal_basis": "Nghị định 12/2022/NĐ-CP, Điều 22",
+        "additional_penalty": "Đình chỉ hoạt động cho đến khi khắc phục xong",
+        "remedial_measure": "Buộc thực hiện đầy đủ biện pháp bảo đảm an toàn lao động",
+    },
+    # Y tế (bổ sung)
+    {
+        "title": "Kinh doanh thực phẩm không đảm bảo an toàn vệ sinh",
+        "description": "Sản xuất, kinh doanh thực phẩm không bảo đảm an toàn thực phẩm gây ảnh hưởng đến sức khỏe người tiêu dùng",
+        "category": "y_te",
+        "min_fine": 20000000,
+        "max_fine": 40000000,
+        "legal_basis": "Nghị định 115/2018/NĐ-CP, Điều 5",
+        "additional_penalty": "Đình chỉ hoạt động từ 1 đến 3 tháng",
+        "remedial_measure": "Buộc tiêu hủy thực phẩm vi phạm",
+    },
+    {
+        "title": "Quảng cáo thuốc không có giấy phép quảng cáo",
+        "description": "Quảng cáo thuốc khi chưa được cơ quan nhà nước có thẩm quyền xác nhận nội dung quảng cáo",
+        "category": "y_te",
+        "min_fine": 20000000,
+        "max_fine": 30000000,
+        "legal_basis": "Nghị định 117/2020/NĐ-CP, Điều 69",
+        "additional_penalty": "Buộc tháo gỡ, xóa quảng cáo vi phạm",
+        "remedial_measure": None,
+    },
+    # Xây dựng (bổ sung)
+    {
+        "title": "Không nghiệm thu công trình trước khi đưa vào sử dụng",
+        "description": "Đưa công trình xây dựng vào khai thác, sử dụng khi chưa được nghiệm thu theo quy định",
+        "category": "xay_dung",
+        "min_fine": 30000000,
+        "max_fine": 50000000,
+        "legal_basis": "Nghị định 16/2022/NĐ-CP, Điều 34",
+        "additional_penalty": "Đình chỉ việc đưa công trình vào khai thác sử dụng",
+        "remedial_measure": "Buộc thực hiện nghiệm thu theo quy định",
+    },
+    # Thương mại (bổ sung)
+    {
+        "title": "Không niêm yết giá hàng hóa, dịch vụ",
+        "description": "Không niêm yết giá hoặc niêm yết giá không rõ ràng gây nhầm lẫn cho khách hàng",
+        "category": "thuong_mai",
+        "min_fine": 500000,
+        "max_fine": 1000000,
+        "legal_basis": "Nghị định 109/2013/NĐ-CP, Điều 9",
+        "additional_penalty": None,
+        "remedial_measure": "Buộc niêm yết giá đúng quy định",
+    },
+    {
+        "title": "Bán hàng hóa, dịch vụ cao hơn giá niêm yết",
+        "description": "Bán hàng hóa, dịch vụ với giá cao hơn giá đã niêm yết",
+        "category": "thuong_mai",
+        "min_fine": 1000000,
+        "max_fine": 3000000,
+        "legal_basis": "Nghị định 109/2013/NĐ-CP, Điều 9",
+        "additional_penalty": None,
+        "remedial_measure": "Buộc trả lại số tiền đã thu cao hơn giá niêm yết cho khách hàng",
+    },
+    # Phòng cháy chữa cháy (bổ sung)
+    {
+        "title": "Cản trở, không chấp hành lệnh huy động của lực lượng chữa cháy",
+        "description": "Cản trở hoặc không chấp hành lệnh huy động tham gia chữa cháy của người có thẩm quyền",
+        "category": "phong_chay",
+        "min_fine": 5000000,
+        "max_fine": 10000000,
+        "legal_basis": "Nghị định 144/2021/NĐ-CP, Điều 42",
+        "additional_penalty": None,
+        "remedial_measure": None,
+    },
+    {
+        "title": "Sử dụng nguồn lửa, nguồn nhiệt không đúng quy định tại nơi có nguy hiểm cháy nổ",
+        "description": "Dùng lửa trần, hút thuốc, sử dụng nguồn lửa, nguồn nhiệt không đúng quy định tại những nơi có nguy hiểm về cháy, nổ",
+        "category": "phong_chay",
+        "min_fine": 5000000,
+        "max_fine": 10000000,
+        "legal_basis": "Nghị định 144/2021/NĐ-CP, Điều 30",
+        "additional_penalty": None,
+        "remedial_measure": None,
+    },
 ]
 
 
 def seed():
     db = SessionLocal()
     try:
-        existing = db.query(models.Violation).count()
-        if existing > 0:
-            print(f"Database already has {existing} violations. Skipping seed.")
+        existing_titles = {v.title for v in db.query(models.Violation.title).all()}
+        new_violations = [v for v in VIOLATIONS if v["title"] not in existing_titles]
+
+        if not new_violations:
+            print(f"No new violations to seed. Database already has {len(existing_titles)} violations.")
             return
-        for v in VIOLATIONS:
+
+        for v in new_violations:
             db.add(models.Violation(**v))
         db.commit()
-        print(f"Seeded {len(VIOLATIONS)} violations successfully.")
+        print(f"Seeded {len(new_violations)} new violations. Total: {len(existing_titles) + len(new_violations)}.")
     finally:
         db.close()
 
