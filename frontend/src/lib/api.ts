@@ -1,4 +1,6 @@
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://luat-vphc-production.up.railway.app";
+const API_URL = typeof window === "undefined"
+  ? (process.env.NEXT_PUBLIC_API_URL || "https://luat-vphc-production.up.railway.app")
+  : "/proxy";
 
 export interface Violation {
   id: number;
